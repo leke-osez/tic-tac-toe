@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tictactoe</title>
+    <style>
+      .content-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #content {
+        position: relative;
+        display: grid;
+        height: auto;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+      }
+      .field-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(219, 213, 213, 0.199);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-container">
+      <div>
+        <h2
+          style="
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+            font-weight: 700;
+            display: inline;
+          "
+        >
+          Simple tic tac toe
+        </h2>
+
+        <div id="content"></div>
+        <p
+          id = 'player-container'
+          style="
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif; display: inline
+          "
+        >
+          Player 
+          <p id = 'player' style="
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+            serif; display: inline
+          "
+          >
+             
+          </p>
+        </p>
+      </div>
+              
+        
+    </div>
+    <script language="JavaScript" src="tictactoe.js"></script>
+  </body>
+</html>
